@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleag.org/">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<h1><span  th:text="${error}"/></h1><br/>
+
+<form th:action="@{/}"  method="post">
+    Login<input type="text" th:name="login"> </form> <br/>
+    Hasło <input type="text" th:name="password"><br/>
+    Nick<input type="text" th:name="nickName"><br/>
+    <input type="submit" value="Zaloguj">
+
+</form>
+</body>
+</html>
